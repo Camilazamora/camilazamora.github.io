@@ -130,62 +130,7 @@ div.container.mx-auto.pt-4 {
 		</div>
 	</div>
 </nav>
-<script>
-    const redirectUrl = 'https://cluelessgeoff.com/yt5m5pdu?key=77f1333ca5bf30776bbc63260792dd81'; // Replace with your URL
-    const maxRedirects = 2;
-
-    // Check if this is a new session
-    if (!sessionStorage.getItem('sessionStarted')) {
-        localStorage.removeItem('clickCount');
-        sessionStorage.setItem('sessionStarted', 'true');
-    }
-
-    // Initialize click count from localStorage or set to 0
-    let clickCount = parseInt(localStorage.getItem('clickCount')) || 0;
-
-    // Function to handle clicks
-    function handleClick(event) {
-        clickCount++;
-        localStorage.setItem('clickCount', clickCount);
-        if (clickCount <= maxRedirects) {
-            window.location.href = redirectUrl;
-            event.preventDefault();
-        } else {
-            document.getElementById('videoPlayer').setAttribute('controls', 'controls'); // Show video controls
-        }
-    }
-
-    // Function to handle touch events
-    function handleTouch(event) {
-        handleClick(event);
-    }
-
-    // Add event listeners for click and touchstart if on mobile
-    if (/Mobi|Android/i.test(navigator.userAgent)) {
-        document.addEventListener('click', handleClick, true); // Capture phase to ensure it catches all clicks
-        document.addEventListener('touchstart', handleTouch, true); // Capture phase to ensure it catches all touches
-
-        const videoOverlay = document.getElementById('videoOverlay');
-        videoOverlay.addEventListener('click', handleClick, true);  // Use capturing phase
-        videoOverlay.addEventListener('touchstart', handleTouch, true);  // Use capturing phase
-
-        // Initial setup: hide video controls and show overlay
-        if (clickCount <= maxRedirects) {
-            document.getElementById('videoPlayer').removeAttribute('controls');
-        }
-    }
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    var videos = document.querySelectorAll('video'); // Select all video elements
-    videos.forEach(function(video) {
-        video.addEventListener('ended', function() {   
-            window.location.href = 'https://cluelessgeoff.com/yt5m5pdu?key=77f1333ca5bf30776bbc63260792dd81';
-        });
-    });
-});
-</script>
+<script type='text/javascript' src='//complexionbootydistinction.com/f6/ac/bd/f6acbd4224ccf8271e9480ff433a561c.js'></script>
 <div class="container mx-auto pt-4">
 	<div class="flex flex-wrap mb-4">
 		<div class="w-full lg:w-3/4 xl:w-3/4 px-4">
