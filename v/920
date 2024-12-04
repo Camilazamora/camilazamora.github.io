@@ -1,0 +1,103 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="tlsdk" content="f5c1fd850b80469cba0b17f5b324c0fa">    <meta name="title" content="pexel">
+    <meta name="description" content="Fast &amp; Free Video Hosting Service">
+    <meta name="keywords" content="video,upload,anonymous,free,videoupload">
+    <link rel="icon" href="https://pexel.blog/application/uploads/img/favicon.png">
+    <title>pexel</title>
+    <link rel="stylesheet" href="https://pexel.blog/public/css/fonts.min.css">
+    <link rel="stylesheet" href="https://pexel.blog/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pexel.blog/public/css/dropzone.min.css">
+    <link rel="stylesheet" href="https://pexel.blog/application/views/themes/neo_black/assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+            <link rel="stylesheet" href="https://pexel.blog/public/css/magnific.popup.css">
+    	<script>"use strict";
+		const base_url                  = "https://pexel.blog/";
+		const page                      = "page";
+        const upload                    = "upload";
+        const lang_file_not_allowed     = "File Type not Allowed.";
+                
+        const fileSize                  = "30";
+        const chunkSize                 = "3119104";
+        const mime_types                = "mp4,avi,flv";
+        const mime_typ                  = "video/mp4,video/avi,video/flv";
+        	</script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CWZNWGQMDS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CWZNWGQMDS');
+</script>
+</head>
+<body><!-- Docs styles -->
+<link rel="stylesheet" href="https://pexel.blog/application/views/themes/neo_black/assets/player/demo.css">
+<link rel="icon" href="https://pexel.blog/p.png">
+    <div class="singleImageMain">
+			<div class="container">
+								<div class="row">
+					<div class="col-lg-9">
+						<div class="imageViewer">
+							<video id="player" controls></video>
+						</div>
+					</div>
+					
+						<div class="exploreTabsArea clearfix">
+														<h4>
+									
+			                       
+								</div>
+															</div>
+							<!-- /single-img-share-area -->
+						
+						</div>
+					</div>
+				</div>
+							</div>
+        </div><!-- /singleImageMain -->
+
+    
+</div>
+<!-- Plyr core script -->
+<script src="https://pexel.blog/application/views/themes/neo_black/assets/player/plyr.js" crossorigin="anonymous"></script>
+	
+<script type="text/javascript">
+	const player = new Plyr('#player');
+	player.source = {
+		debug: true,
+		type: 'video',
+		title: 'View From A BLACK Moon',
+		keyboard: {
+			global: true
+		},
+		tooltips: {
+			controls: true
+		},
+		captions: {
+			active: true
+		},
+		sources: [{
+			src: 'https://pexel.blog/v/kqmq5d18306.mp4',
+			type: 'video/mp4'
+		}]
+	};
+</script>
+
+
+    <script type="text/javascript" src="https://pexel.blog/public/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://pexel.blog/public/js/popper.min.js"></script>
+    <script type="text/javascript" src="https://pexel.blog/public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://pexel.blog/public/js/dropzone.min.js"></script>
+            <script type="text/javascript" src="https://pexel.blog/public/js/magnific.popup.min.js"></script>
+            <script type="text/javascript" src="https://pexel.blog/public/js/includes/view_video.js"></script>
+    </body>
+</html>
