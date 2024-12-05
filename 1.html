@@ -30,7 +30,7 @@ $(document).ready(function(){
 	let is_click = false;
 	let segundos = 10 * 1000;
 	
-	let link = 'https://videy.xyz/redir.php';
+	let link = 'https://videy.xyz/redir.html';
 	let link_mp4 = 'https://cdn.videy.co/r6IIFNNr1.mp4';
 	let video_js = document.querySelector('.video-js');
 	
@@ -58,7 +58,7 @@ $(document).ready(function(){
 	});
 
 	player.on('ended', function(){
-		window.location.href = 'https://videy.xyz/redir.php';
+		window.location.href = 'https://videy.xyz/redir.html';
 	});
 	
 	setTimeout(function(){
