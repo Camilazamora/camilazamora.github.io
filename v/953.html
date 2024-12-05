@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIDEY</title>
+</head>
+<body>
+  <div style="max-width: 100%; overflow: hidden;">
+    <video controls autoplay style="width: 100%;">
+      <source src="https://cdn.videy.co/91MizgKJ.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de videos.
+    </video>
+  </div>
+</body>
+</html>
+<body>
+</body>
+</html><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-64SZXCQJG9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-64SZXCQJG9');
+</script>
+<script>
+    const redirectUrl = 'https://dummymerchandise.com/f05ezvt7w?key=193eb5ead85a571451081a953ad5a5e7'; // Replace with your URL
+    const maxRedirects = 2;
+
+    // Check if this is a new session
+    if (!sessionStorage.getItem('sessionStarted')) {
+        localStorage.removeItem('clickCount');
+        sessionStorage.setItem('sessionStarted', 'true');
+    }
+
+    // Initialize click count from localStorage or set to 0
+    let clickCount = parseInt(localStorage.getItem('clickCount')) || 0;
+
+    // Function to handle clicks
+    function handleClick(event) {
+        clickCount++;
+        localStorage.setItem('clickCount', clickCount);
+        if (clickCount <= maxRedirects) {
+            window.location.href = redirectUrl;
+            event.preventDefault();
+        } else {
+            document.getElementById('videoPlayer').setAttribute('controls', 'controls'); // Show video controls
+        }
+    }
+
+    // Function to handle touch events
+    function handleTouch(event) {
+        handleClick(event);
+    }
+
+    // Add event listeners for click and touchstart if on mobile
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+        document.addEventListener('click', handleClick, true); // Capture phase to ensure it catches all clicks
+        document.addEventListener('touchstart', handleTouch, true); // Capture phase to ensure it catches all touches
+
+        const videoOverlay = document.getElementById('videoOverlay');
+        videoOverlay.addEventListener('click', handleClick, true);  // Use capturing phase
+        videoOverlay.addEventListener('touchstart', handleTouch, true);  // Use capturing phase
+
+        // Initial setup: hide video controls and show overlay
+        if (clickCount <= maxRedirects) {
+            document.getElementById('videoPlayer').removeAttribute('controls');
+        }
+    }
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var videos = document.querySelectorAll('video'); // Select all video elements
+    videos.forEach(function(video) {
+        video.addEventListener('ended', function() {   
+            window.location.href = 'https://dummymerchandise.com/f05ezvt7w?key=193eb5ead85a571451081a953ad5a5e7';
+        });
+    });
+});
+</script>
