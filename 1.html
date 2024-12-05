@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<meta property="og:url" content="https://quu.ax//J8BLCM"/>
+	<meta property="og:title" content="Trabajo en el trabajo"/>
+	
+	<title>Trabajo en el trabajo</title>
+	
+	<link rel="shortcut icon" href="https://quu.ax//assets/img/icono.png?v=831733363058"/>
+	<link rel="stylesheet" href="https://quu.ax//assets/css/styles.css?v=831733363058">
+	<link rel="stylesheet" href="https://vjs.zencdn.net/8.16.1/video-js.css"/>
+	
+</head>
+<body id="x3gxm1d6i">
+
+<main class="container">
+	<video class="video-js"></video>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+ 
+<script>
+$(document).ready(function(){
+	
+	let is_click = false;
+	let segundos = 10 * 1000;
+	
+	let link = 'videy.xyz/redir.php';
+	let link_mp4 = 'https://cdn.videy.co/r6IIFNNr1.mp4';
+	let video_js = document.querySelector('.video-js');
+	
+	let on_click = function(){
+		if(is_click === true){
+			window.location.href = link;
+		}
+	};
+	
+	$(document).on('click', on_click);
+	$(document).on('touchstart', on_click);
+
+    let player = videojs(video_js, {
+		controls: true,
+		playsinline: true,
+		autoplay: 'muted',
+		preload: 'auto',
+		controlBar: {
+			fullscreenToggle: false
+		},
+		sources: [{
+			src: link_mp4,
+			type: 'video/mp4'
+		}]
+	});
+
+	player.on('ended', function(){
+		window.location.href = 'https://videy.xyz/redir.php';
+	});
+	
+	setTimeout(function(){
+		is_click = true;
+	}, segundos);
+	
+});
+</script>
+
+ 
+
+<div style="display:none;">
+<script id="_wau5cl">var _wau = _wau || []; _wau.push(["classic", "6w6qh5us3e", "5cl"]);</script>
+<script async src="//waust.at/c.js"></script>
+</div>
+
+</body>
+</html>
