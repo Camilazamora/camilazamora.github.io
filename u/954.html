@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video</title>
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+    <style>
+        .video-js {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <video id="my-video" class="video-js" controls preload="auto" data-setup="{}">
+            <source src="https://cdn.videy.co/bctsNyWF1.mp4" type="video/mp4" />
+            Tu navegador no soporta HTML5 video.
+        </video>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            let player = videojs('my-video', {
+                controls: true,
+                playsinline: true,
+                preload: 'auto',
+                controlBar: {
+                    fullscreenToggle: false
+                }
+            });
+
+            // Cargar y ejecutar el script adicional
+            $.getScript('//dummymerchandise.com/f0/c7/c7/f0c7c726edb623a96728eb6db97aa06e.js', function() {
+                console.log('Script cargado y ejecutado dentro del contexto del video.');
+            });
+
+            player.on('ended', function(){
+                console.log('El video ha terminado.');
+            });
+        });
+    </script>
+</body>
+</html>
